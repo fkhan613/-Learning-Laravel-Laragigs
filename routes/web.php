@@ -19,14 +19,14 @@ use App\Models\Listings;
 Route::get('/', function(){
     return view('listings',[
         'heading' => 'Latest listings',
-        'listings' => Listings::getAll(),
+        'listings' => Listings::all(),
     ]);
 });
 
 //Returns a single listing.
 Route::get('/listings/{id}', function($id){
     return view('listing', [
-        'listing' => Listings::findID($id)
+        'listing' => Listings::find($id)
     ]);
 });
 
