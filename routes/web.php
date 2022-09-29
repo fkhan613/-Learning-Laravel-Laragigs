@@ -31,3 +31,16 @@ Route::get('/', [ListingController::class, 'index']);
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
 
+
+// Route::get('/hello', function () {
+//     return response('<h1>This is a test</h1>', 200);
+// });
+
+// Route::get('/posts/{id}', function ($id){
+//     return response('Post ' . $id);
+
+// })->where('id', '[0-9]+');
+
+// Route::get('/search', function(Request $request){
+//     return response('You entered: ' . $request->name . ' ' . $request->city);
+// });
