@@ -31,13 +31,15 @@ class ListingController extends Controller
     public function store(Request $request){
         $formFields = $request->validate([
             'title' => 'required',
-            'company' => ['required', Rule::unique('listings', 'company_name')],
+            'company_name' => 'required',
             'location' => 'required',
-            'webiste' => Rule::unique('listings', 'website'),
-            'email' => ['required', Rule::unique('listings', 'email')],
+            'website' => 'required',
+            'email' => ['required', 'email'],
             'tags' => 'required',
             'description' => 'required'
         ]);
+
+        Listings::create($formFields);
 
         return redirect('/');
     }

@@ -15,13 +15,13 @@ return new class extends Migration
     {
         Schema::create('listings', function (Blueprint $table) {
             $table->id();
-            $table -> string('title');
-            $table -> string('tags');
-            $table -> string('company_name');
-            $table -> string('location');
-            $table -> string('email');
-            $table -> string('website');
-            $table -> longText('description');
+            $table -> string('title') ->nullable();
+            $table -> string('tags')->nullable();
+            $table -> string('company_name')->nullable();
+            $table -> string('location')->nullable();
+            $table -> string('email')->nullable();
+            $table -> string('website')->nullable();
+            $table -> longText('description')->nullable();
             $table->timestamps();
         });
     }
