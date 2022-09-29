@@ -31,6 +31,7 @@ Route::get('/', [ListingController::class, 'index']);
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
 
+<<<<<<< HEAD
 
 // Route::get('/hello', function () {
 //     return response('<h1>This is a test</h1>', 200);
@@ -44,3 +45,5 @@ Route::get('/listings/{listing}',[ ListingController::class, 'show']);
 // Route::get('/search', function(Request $request){
 //     return response('You entered: ' . $request->name . ' ' . $request->city);
 // });
+=======
+>>>>>>> f1bd55c00acc6da212f862e84e893ea6593694f4
