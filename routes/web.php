@@ -28,9 +28,13 @@ use App\Models\Listings;
 //Returns all listings
 Route::get('/', [ListingController::class, 'index']);
 
+//shows create form
+Route::get('/listings/create', [ListingController::class, 'create']);
+
+Route::post('/listings', [ListingController::class, 'store']);
+
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
-
 
 // Route::get('/hello', function () {
 //     return response('<h1>This is a test</h1>', 200);
