@@ -13,7 +13,7 @@ $tags = explode(',', $tagsCsv);
         @endforeach
     @else
         <li class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs">
-            <p>No tags available</p>
+            <p>No tags</p>
         </li>
     @endunless
 </ul>

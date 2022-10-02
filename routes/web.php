@@ -31,10 +31,14 @@ Route::get('/', [ListingController::class, 'index']);
 //shows create form
 Route::get('/listings/create', [ListingController::class, 'create']);
 
+//store the listing in the database
 Route::post('/listings', [ListingController::class, 'store']);
 
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
+
+
+
 
 // Route::get('/hello', function () {
 //     return response('<h1>This is a test</h1>', 200);
