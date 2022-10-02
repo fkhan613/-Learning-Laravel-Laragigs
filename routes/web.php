@@ -34,10 +34,14 @@ Route::get('/listings/create', [ListingController::class, 'create']);
 //store the listing in the database
 Route::post('/listings', [ListingController::class, 'store']);
 
+//show edit form
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
+//update listing
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
+
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
-
-
 
 
 // Route::get('/hello', function () {
