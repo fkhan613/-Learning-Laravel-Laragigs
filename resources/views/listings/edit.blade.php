@@ -94,7 +94,7 @@
             </div>
 
             <div class="mb-6">
-                <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
+                <button type="submit" class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
                     Finish
                 </button>
                 <a href="/" class="text-black ml-4"> Back </a>
