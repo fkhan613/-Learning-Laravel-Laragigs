@@ -29,7 +29,7 @@ use App\Http\Controllers\ListingController;
 //Returns all listings
 Route::get('/', [ListingController::class, 'index']);
 
-//shows create form
+//shows listings create form
 Route::get('/listings/create', [ListingController::class, 'create'])->middleware('auth');
 
 //store the listing in the database
@@ -43,6 +43,9 @@ Route::put('/listings/{listing}', [ListingController::class, 'update'])->middlew
 
 //delete listing
 Route::delete('/listings/{listing}', [ListingController::class, 'destroy'])->middleware('auth');
+
+//show manage listings page
+Route::get('/listings/manage',[ListingController::class, 'manage']) -> middleware('auth');
 
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
@@ -61,6 +64,7 @@ Route::get('/login',[UserController::class, 'login'])->name('login')->middleware
 
 //login user
 Route::post('/users/authenticate',[UserController::class, 'authenticate']);
+
 
 
 // Route::get('/hello', function () {
