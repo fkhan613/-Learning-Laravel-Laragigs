@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ListingController;
+use App\Models\Listings;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\Listings;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ListingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,12 @@ Route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
 
 //Returns a single listing.
 Route::get('/listings/{listing}',[ ListingController::class, 'show']);
+
+//show register create form
+Route::get('/register',[UserController::class, 'create']);
+
+//store user
+Route::post('/users',[UserController::class, 'store']);
 
 
 // Route::get('/hello', function () {
