@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('listings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade') ->nullable();
             $table -> string('title') ->nullable();
             $table -> string('tags')->nullable();
             $table -> string('company_name')->nullable();
