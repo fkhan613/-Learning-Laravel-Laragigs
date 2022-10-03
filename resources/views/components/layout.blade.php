@@ -34,12 +34,14 @@
                     <span class="font-bold uppercase">Welcome {{ auth()->user()->name }}!</span>
                 </li>
                 <li>
-                    <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Manage Listings</a>
+                    <a href="/listings/manage" class="hover:text-laravel"><i class="fa-solid fa-gear"></i> Manage
+                        Listings</a>
                 </li>
                 <li>
                     <form class="inline" method="POST" action="/logout">
                         @csrf
-                        <button type="submit" class="hover:text-laravel"><i class="fa-solid fa-door-closed"></i> Logout</button>
+                        <button type="submit" class="hover:text-laravel"><i class="fa-solid fa-door-closed"></i>
+                            Logout</button>
 
                     </form>
                 </li>
@@ -59,8 +61,9 @@
     </main>
 
     <footer
-        class="bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
+        class="bottom-0 left-0 w-full gap-9 flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
         <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+        <a href="/listings/create" class="bg-black text-white py-2 px-5">Post Job</a>
     </footer>
     <x-flash-message></x-flash-message>
 </body>
