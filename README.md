@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About TechHub
+
+TechHub is a web application where users can upload job listings for other software engineers to apply for. You can create a account, view listings, add listings, edit listings and delete listings of your own. Within this application, there is full user authentication provided by built in laravel methods.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
