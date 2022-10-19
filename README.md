@@ -13,6 +13,11 @@ TechHub is a web application where users can upload job listings for other softw
 
 ![image](https://user-images.githubusercontent.com/101340703/196815765-7baf041c-1e65-4ae0-8e64-ca2a5654a968.png)
 
+![image](https://user-images.githubusercontent.com/101340703/196815879-f7b8be52-948f-4f39-95cf-bbf3f210e9cc.png)
+
+![image](https://user-images.githubusercontent.com/101340703/196816214-41a445a4-0b3f-4fca-89be-147bf29e7882.png)
+
+
 
 ## About Laravel
 
