@@ -11,6 +11,9 @@
 
 TechHub is a web application where users can upload job listings for other software engineers to apply for. You can create a account, view listings, add listings, edit listings and delete listings of your own. Within this application, there is full user authentication provided by built in laravel methods.
 
+![image](https://user-images.githubusercontent.com/101340703/196815765-7baf041c-1e65-4ae0-8e64-ca2a5654a968.png)
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
