@@ -1,5 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/101340703/198898162-a45fb2f0-e4e0-40ca-b1e4-4c4f09b67b97.png" width="650" alt="Laravel Logo"></a></p>
 <br>
+
 ## About TechHub
 
 TechHub is an entirely full-stack web application where users can upload job listings for other software engineers to apply for. You can create an account, view listings, add listings, edit listings and delete listings of your own. Within this application, full user authentication is provided by built-in laravel methods, and users can register and log in seamlessly.
